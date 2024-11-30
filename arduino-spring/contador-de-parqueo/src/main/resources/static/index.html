@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estado del Parqueo</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <main>
+        <section id="parking-status">
+            <h2>Disponibilidad de Espacios de Parqueo</h2>
+            <svg id="parking-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+                <rect width="100%" height="100%" fill="#f0f0f0" /> <!-- Fondo del estacionamiento -->
+
+                <!-- Espacios regulares -->
+                <g id="regular-parking">
+                    <g id="regular-spot-1" class="parking-spot">
+                        <rect width="120" height="60" x="50" y="50" class="neutral" />
+                        <line x1="50" y1="110" x2="170" y2="110" stroke="white" stroke-width="4" />
+                        <image id="car-regular-1" href="car.svg" x="60" y="60" width="40" height="40" style="display:none;" />
+                    </g>
+                    <g id="regular-spot-2" class="parking-spot">
+                        <rect width="120" height="60" x="200" y="50" class="neutral" />
+                        <line x1="200" y1="110" x2="320" y2="110" stroke="white" stroke-width="4" />
+                        <image id="car-regular-2" href="car.svg" x="210" y="60" width="40" height="40" style="display:none;" />
+                    </g>
+                    <g id="regular-spot-3" class="parking-spot">
+                        <rect width="120" height="60" x="350" y="50" class="neutral" />
+                        <line x1="350" y1="110" x2="470" y2="110" stroke="white" stroke-width="4" />
+                        <image id="car-regular-3" href="car.svg" x="360" y="60" width="40" height="40" style="display:none;" />
+                    </g>
+                </g>
+
+                <!-- Espacios reservados -->
+                <g id="reserved-parking">
+                    <g id="reserved-spot-1" class="parking-spot">
+                        <rect width="120" height="60" x="50" y="150" class="neutral" />
+                        <line x1="50" y1="210" x2="170" y2="210" stroke="white" stroke-width="4" />
+                        <image id="car-reserved-1" href="car.svg" x="60" y="160" width="40" height="40" style="display:none;" />
+                    </g>
+                    <g id="reserved-spot-2" class="parking-spot">
+                        <rect width="120" height="60" x="200" y="150" class="neutral" />
+                        <line x1="200" y1="210" x2="320" y2="210" stroke="white" stroke-width="4" />
+                        <image id="car-reserved-2" href="car.svg" x="210" y="160" width="40" height="40" style="display:none;" />
+                    </g>
+                    <g id="reserved-spot-3" class="parking-spot">
+                        <rect width="120" height="60" x="350" y="150" class="neutral" />
+                        <line x1="350" y1="210" x2="470" y2="210" stroke="white" stroke-width="4" />
+                        <image id="car-reserved-3" href="car.svg" x="360" y="160" width="40" height="40" style="display:none;" />
+                    </g>
+                </g>
+            </svg>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Parqueo, Inc. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script> 
+
+</body>
+</html>
+

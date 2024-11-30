@@ -1,0 +1,31 @@
+/* Estilos generales para el SVG */
+#parking-svg {
+    border: 2px solid #ccc; /* Borde del SVG */
+    background-color: #f0f0f0; /* Color de fondo del estacionamiento */
+    margin-top: 20px;
+}
+
+.available {
+    fill: lightgray; /* Color para espacios disponibles */
+}
+
+.occupied {
+    fill: red; /* Color para espacios ocupados */
+}
+
+.reserved {
+    fill: blue; /* Color para espacios reservados disponibles */
+}
+
+.reserved-occupied {
+    fill: darkred; /* Color para espacios reservados ocupados */
+}
+
+/* Estilos para los coches */
+#parking-svg image {
+    display: none; /* Inicialmente ocultar los coches */
+}
+
+#parking-svg image.show {
+    display: block; /* Mostrar el coche si el estado es ocupado */
+}
